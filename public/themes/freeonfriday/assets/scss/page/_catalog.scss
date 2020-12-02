@@ -1,0 +1,172 @@
+.catalog {
+    &__title {
+        max-width: 560px;
+        font-size: 76px;
+        margin-bottom: 80px;
+        line-height: 76px;
+        @include mmax(767) {
+            margin-bottom: 40px;
+        }
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        @include mmax(767) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__filter {
+        position: relative;
+        display: block;
+        &.open {
+            .catalog__filter-wrap {
+                max-height: 700px;
+            }
+        }
+    }
+    &__filter-wrap {
+        display: flex;
+        align-items: center;
+        @include mmax(767) {
+            padding: 0 30px;
+            border-radius: 10px;
+            background-color: #000;
+            position: absolute;
+            z-index: 10;
+            top: 100%;
+            left: 0;
+            max-height: 0;
+            overflow: hidden;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__link-all {
+        display: none;
+        @include mmax(767) {
+            padding: 10px 0;
+            font-family: $font2;
+            display: block;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 21px;
+
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+
+            color: #8c959e;
+        }
+    }
+    &__link {
+        margin-right: 65px;
+        font-family: $font2;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+
+        color: #8c959e;
+        transition: all 0.3s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $orange;
+        }
+        @include mmax(991) {
+            margin-right: 30px;
+        }
+        @include mmax(767) {
+            white-space: nowrap;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            color: #ffffff;
+            &:last-child {
+                // margin-bottom: 0;
+            }
+            &:first-child {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+        margin-bottom: 70px;
+        .product-card {
+            flex: 0 0 calc(100% / 3);
+            max-width: calc(100% / 3);
+        }
+        .product-card__img {
+            min-height: 340px;
+        }
+        .product-card__wrap {
+            padding: 30px;
+        }
+        .product-card__title {
+            margin-top: 0;
+        }
+
+        @include mmax(1199) {
+            margin: 0 -15px;
+            .product-card__wrap {
+                padding: 15px;
+            }
+        }
+        @include mmax(991) {
+            margin-bottom: 90px;
+            .product-card {
+                flex: 0 0 calc(100% / 2);
+                max-width: calc(100% / 2);
+            }
+        }
+        @include mmax(575) {
+            margin-bottom: 90px;
+            .product-card {
+                margin-bottom: 90px;
+                flex: 0 0 calc(100% / 1);
+                max-width: calc(100% / 1);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__sets {
+        margin-bottom: 120px;
+
+        @include mmax(991) {
+            margin-bottom: 0;
+        }
+    }
+    &__sets-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -30px;
+        .product-card {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 30px;
+            @include mmax(991) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: 90px;
+            }
+        }
+        .product-card__wrap {
+            padding: 30px;
+        }
+        .product-card__img {
+            min-height: 530px;
+        }
+    }
+}

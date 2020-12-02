@@ -1,0 +1,100 @@
+// USER VARIABLES SECTION
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+$font1: "Bourbon St", sans-serif;
+$font2: "IBM Plex Mono";
+$font3: "IBM Plex Sans", sans-serif;
+$font4: "Aviano Sans", sans-serif;
+
+$accent: #000000; // Accent Color
+$fontsize: 15px; // Body Font Size
+$textcolor: #0a0d0f; // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$roboto: $font3; // Roboto Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss"; // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format("woff2");
+	}
+}
+
+// @include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
+// @include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
+// @include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+// @include font("Roboto", italic, 700, "../fonts/roboto-bolditalic-webfont.woff2");
+
+@include font("Bourbon St", normal, 400, "../fonts/Burbon/Burbon ST/BourbonSt-Regular.woff");
+// @include font("Bourbon St", normal, 400, "../fonts/FOF_Fonts/BourbonSt-Regular.otf");
+
+@include font("IBM Plex Mono", normal, 600, "../fonts/FOF_Fonts/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf");
+@include font("IBM Plex Mono", normal, 400, "../fonts/FOF_Fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf");
+
+@include font("IBM Plex Sans", normal, 700, "../fonts/FOF_Fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
+@include font("IBM Plex Sans", normal, 400, "../fonts/FOF_Fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+
+// @include font("Aviano Sans", normal, 700, "../fonts/FOF_Fonts/AvianoSans/AvianoSansBold.eot");
+// @include font("Aviano Sans", normal, 700, "../fonts/FOF_Fonts/AvianoSans/AvianoSansBold.ttf");
+@include font("Aviano Sans", normal, 700, "../fonts/FOF_Fonts/AvianoSans/AvianoSansBold.woff");
+// @include font("Aviano Sans", normal, 400, "../fonts/FOF_Fonts/AvianoSans/AvianoSans.eot");
+// @include font("Aviano Sans", normal, 400, "../fonts/FOF_Fonts/AvianoSans/AvianoSans.ttf");
+@include font("Aviano Sans", normal, 400, "../fonts/FOF_Fonts/AvianoSans/AvianoSans.woff");
+
+// @font-face {
+// 	font-family: "fontello";
+// 	src: url("../fonts/fontello/font/fontello.eot?31919061");
+// 	src: url("../fonts/fontello/font/fontello.eot?31919061#iefix") format("embedded-opentype"),
+// 		url("../fonts/fontello/font/fontello.woff?31919061") format("woff"),
+// 		url("../fonts/fontello/font/fontello.ttf?31919061") format("truetype"),
+// 		url("../fonts/fontello/font/fontello.svg?31919061#fontello") format("svg");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input,
+textarea {
+	outline: none;
+	&:focus:required:invalid {
+		border-color: red;
+	}
+	&:required:valid {
+		border-color: green;
+	}
+}
+
+body {
+	font-family: $roboto;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: $textcolor;
+}

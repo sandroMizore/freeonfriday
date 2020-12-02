@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Aviano Sans';
+    src: url('AvianoSansLight.eot');
+    src: local('Aviano Sans Light'), local('AvianoSansLight'),
+        url('AvianoSansLight.eot?#iefix') format('embedded-opentype'),
+        url('AvianoSansLight.woff') format('woff'),
+        url('AvianoSansLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aviano Sans';
+    src: url('AvianoSans.eot');
+    src: local('Aviano Sans'), local('AvianoSans'),
+        url('AvianoSans.eot?#iefix') format('embedded-opentype'),
+        url('AvianoSans.woff') format('woff'),
+        url('AvianoSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aviano Sans';
+    src: url('AvianoSansThin.eot');
+    src: local('Aviano Sans Thin'), local('AvianoSansThin'),
+        url('AvianoSansThin.eot?#iefix') format('embedded-opentype'),
+        url('AvianoSansThin.woff') format('woff'),
+        url('AvianoSansThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aviano Sans';
+    src: url('AvianoSansBlack.eot');
+    src: local('Aviano Sans Black'), local('AvianoSansBlack'),
+        url('AvianoSansBlack.eot?#iefix') format('embedded-opentype'),
+        url('AvianoSansBlack.woff') format('woff'),
+        url('AvianoSansBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aviano Sans';
+    src: url('AvianoSansBold.eot');
+    src: local('Aviano Sans Bold'), local('AvianoSansBold'),
+        url('AvianoSansBold.eot?#iefix') format('embedded-opentype'),
+        url('AvianoSansBold.woff') format('woff'),
+        url('AvianoSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

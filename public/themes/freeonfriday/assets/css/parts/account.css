@@ -1,0 +1,904 @@
+.account-content {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+}
+.wishlist-container .product-card {
+  max-width: 300px;
+}
+.wishlist-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.account-content .sidebar.left .sidebar {
+  max-width: 80%;
+  background-color: #00305d;
+  padding: 10px;
+}
+.menu-block-content {
+  padding-left: 15px;
+}
+.menu-block-title {
+  color: #fff;
+  font-weight: 600;
+}
+.menu-item a {
+  color: #eee;
+  margin: 5px 0;
+}
+.menu-item {
+  margin: 10px 0;
+}
+.menu-item.active a {
+  color: #9a9a9a;
+}
+#deleteProfile {
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 500px;
+  max-width: 100%;
+  height: 300px;
+  background: #fff;
+}
+#deleteProfile input {
+  margin: 15px 0;
+}
+.theme-btn {
+  border: 1px solid #eee;
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.account-action {
+  margin-left: 50px;
+}
+input, select {
+  width: 300px;
+  border: .5px solid #eee;
+  border-radius: 5px;
+  padding: 5px;
+}
+.account-head .pull-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.profile-update-form .row{
+  margin-bottom: 15px;
+}
+.account-content .sidebar {
+    height: 100%
+}
+.velocity-divide-page .left {
+    z-index: 1;
+    width: 230px;
+    position: absolute;
+}
+.account-content .sidebar .customer-sidebar {
+    border-right: 1px solid #e5e5e5
+}
+
+.account-content .sidebar .customer-sidebar .account-details {
+    text-align: center;
+    padding: 25px 20px
+}
+
+.account-content .sidebar .customer-sidebar .account-details .customer-name {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 5px;
+    display: inline-block
+}
+
+.account-content .sidebar .customer-sidebar .account-details .customer-name-text {
+    color: rgba(0, 0, 0, .83)
+}
+
+.account-content .sidebar .customer-sidebar .account-details .customer-email {
+    color: #9e9e9e
+}
+
+.account-content .sidebar .customer-sidebar .navigation,
+.account-content .sidebar .customer-sidebar .navigation li {
+    width: 100%
+}
+
+.account-content .sidebar .customer-sidebar .navigation li.active,
+.account-content .sidebar .customer-sidebar .navigation li:hover {
+    color: #28557b;
+    background-color: #ececec
+}
+
+.account-content .sidebar .customer-sidebar .navigation li i.icon {
+    font-size: 18px;
+    padding-right: 5px
+}
+
+.account-content .sidebar .customer-sidebar .navigation li i.icon.profile:before {
+    content: "\E995"
+}
+
+.account-content .sidebar .customer-sidebar .navigation li i.icon.address:before {
+    content: "\E949"
+}
+
+.account-content .sidebar .customer-sidebar .navigation li i.icon.reviews:before {
+    content: "\E97D"
+}
+
+.account-content .sidebar .customer-sidebar .navigation li i.icon.wishlist:before {
+    content: "\E93E"
+}
+
+.account-content .sidebar .customer-sidebar .navigation li i.icon.orders:before {
+    content: "\E931"
+}
+
+.account-content .sidebar .customer-sidebar .navigation li i.icon.downloadables:before {
+    content: "\E926"
+}
+
+.account-content .sidebar .customer-sidebar .navigation li i.icon.compare:before {
+    content: "\E93B"
+}
+
+.account-content .sidebar .customer-sidebar .navigation li a {
+    padding: 10px 15px
+}
+
+.account-content .sidebar .customer-sidebar .navigation li:last-child {
+    margin-bottom: 0
+}
+
+.account-content .account-layout {
+    color: rgba(0, 0, 0, .83);
+    padding: 15px 20px;
+    padding-bottom: 60px
+}
+
+.account-content .account-layout.right {
+    padding-left: 250px !important
+}
+
+.account-content .account-layout .account-head {
+    margin-bottom: 20px
+}
+
+.account-content .account-layout .account-heading {
+    font-size: 24px;
+    font-weight: 600
+}
+
+.account-content .account-layout .account-table-content .control-group,
+.account-content .account-layout .account-table-content>.row {
+    margin-bottom: 30px
+}
+
+.account-content .account-layout .account-table-content label {
+    font-weight: 500
+}
+
+.account-content .account-layout .account-table-content input,
+.account-content .account-layout .account-table-content select,
+.account-content .account-layout .account-table-content textarea {
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+    padding: 5px 16px;
+    border-radius: 1px;
+    background: #fff;
+    border: 1px solid #ccc
+}
+
+.account-content .account-layout .account-table-content input:active,
+.account-content .account-layout .account-table-content input:focus,
+.account-content .account-layout .account-table-content select:active,
+.account-content .account-layout .account-table-content select:focus,
+.account-content .account-layout .account-table-content textarea:active,
+.account-content .account-layout .account-table-content textarea:focus {
+    border-color: #26a37c
+}
+
+.account-content .account-layout .account-table-content .address-holder {
+    margin-top: 30px
+}
+
+.account-content .account-layout .account-table-content .address-holder>div {
+    margin: 5px 0;
+    padding-left: 0
+}
+
+.account-content .account-layout .account-table-content .address-holder .card {
+    height: 100%
+}
+
+.account-content .account-layout .account-table-content .address-holder .card ul li {
+    display: inline-block
+}
+
+.account-content .account-layout .account-table-content .account-items-list {
+    margin-bottom: 40px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters {
+    margin-bottom: 20px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters>* {
+    display: inline-block;
+    vertical-align: top
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters>.search-filter {
+    top: 20px;
+    max-width: 200px;
+    margin-right: 20px;
+    position: relative
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters>:nth-of-type(2) {
+    width: calc(50% - 10px)
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters>:nth-of-type(3) {
+    width: calc(50% - 220px)
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters>:nth-of-type(3) .control-group {
+    float: right;
+    max-width: 200px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters>* input,
+.account-content .account-layout .account-table-content #datagrid-filters>* select {
+    height: 38px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .filter-tag {
+    font-size: 18px;
+    font-weight: 600
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .grid-dropdown-header {
+    display: inline-block
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .dropdown-list li {
+    list-style: none
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .dropdown-toggle:after {
+    border: unset
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .dropdown-container {
+    width: 100%;
+    display: inline-block !important
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .dropdown-container .quantity button,
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .dropdown-container button.btn,
+.quantity .account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .dropdown-container button {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
+    padding: 5px 10px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .dropdown-container li:not(:last-child) {
+    margin-bottom: 10px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .dropdown-container li {
+    width: 150px;
+    display: inline-block
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters .dropdown-filters .control-group {
+    margin-bottom: 0
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters~table.table thead {
+    font-size: 18px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters~table.table tbody {
+    font-size: 16px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters~table.table tbody tr td a {
+    display: block
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters~table.table tbody tr .badge {
+    padding: 10px;
+    font-size: 12px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters~table.table tbody tr .action .eye-icon {
+    font-size: 24px;
+    padding-left: 10px
+}
+
+.account-content .account-layout .account-table-content #datagrid-filters~table.table tbody tr .action .eye-icon:hover {
+    color: #4d7ea8
+}
+
+.account-content .account-layout .account-table-content .filter-row-two .filter-tag .cross-icon:before {
+    top: 1px;
+    content: "\E91F";
+    margin-left: 4px;
+    position: relative
+}
+
+.account-content .account-layout .account-table-content .filter-row-two .filter-tag .cross-icon:hover {
+    cursor: pointer
+}
+
+.account-content .account-layout .account-table-content.profile-page-content .table {
+    padding: 0;
+    width: 800px;
+    margin-bottom: 15px
+}
+
+.account-content .account-layout .account-table-content.profile-page-content .table>table {
+    width: 100%;
+    color: #5e5e5e;
+    border: 1px solid rgba(0, 0, 0, .125)
+}
+
+.account-content .account-layout .account-table-content.profile-page-content .table td {
+    border: unset;
+    padding: 6px 12px
+}
+
+.account-content .account-layout .account-table-content .accordian .accordian-header {
+    padding: 10px 0;
+    font-weight: 600
+}
+
+.account-content .account-layout .account-table-content .image-wrapper {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block
+}
+
+.account-content .account-layout .account-table-content .image-wrapper .image-item {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 3px;
+    margin-right: 20px;
+    background: #f8f9fa;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url(/vendor/webkul/ui/assets/images/placeholder-icon.svg)
+}
+
+.account-content .account-layout .account-table-content .image-wrapper .image-item .remove-image {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+    text-align: center;
+    position: absolute;
+    margin-right: 20px;
+    border-radius: 0 0 4px 4px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .24);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .08)), to(rgba(0, 0, 0, .24)));
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, .08), rgba(0, 0, 0, .24))
+}
+
+.account-content .account-layout .account-table-content .image-wrapper .image-item input {
+    display: none
+}
+
+.account-content .account-layout .account-table-content .image-wrapper .image-item img.preview {
+    width: 100%;
+    height: 100%
+}
+
+.account-content .account-layout .account-items-list.wishlist-container {
+    width: 100%;
+    margin: 0 auto
+}
+
+.account-content .account-layout .account-items-list.wishlist-container .product-card-new {
+    width: 19rem
+}
+
+.account-content .account-layout .max-sm-img-dimention {
+    max-width: 110px;
+    max-height: 110px
+}
+
+.account-content .account-layout .max-sm-img-dimention img {
+    width: 100%;
+    height: 100%
+}
+
+.account-content .account-layout .reviews-container>.row {
+    margin-bottom: 40px
+}
+
+.account-content .account-layout .bottom-toolbar .pagination {
+    margin: 0
+}
+
+.account-content .account-layout .bottom-toolbar .pagination a:not([href]).next,
+.account-content .account-layout .bottom-toolbar .pagination a:not([href]).previous {
+    cursor: not-allowed;
+    color: #9e9e9e !important
+}
+
+.account-content .account-layout .bottom-toolbar .pagination .page-item {
+    border: none !important;
+    box-shadow: unset !important;
+    -webkit-box-shadow: unset !important
+}
+
+.account-content .account-layout .bottom-toolbar .pagination .page-item.active {
+    border: 1px solid #26a37c;
+    color: #26a37c !important
+}
+
+.account-content .account-layout .bottom-toolbar .pagination .page-item.next .angle-left-icon,
+.account-content .account-layout .bottom-toolbar .pagination .page-item.next .angle-right-icon,
+.account-content .account-layout .bottom-toolbar .pagination .page-item.previous .angle-left-icon,
+.account-content .account-layout .bottom-toolbar .pagination .page-item.previous .angle-right-icon {
+    margin: 0;
+    font-size: 24px;
+    background: unset;
+    text-align: center
+}
+
+.account-content .account-layout .bottom-toolbar .pagination .page-item.next .angle-right-icon:before {
+    content: "\E908"
+}
+
+.account-content .account-layout .bottom-toolbar .pagination .page-item.previous .angle-left-icon:before {
+    content: "\E907"
+}
+
+.account-content .account-layout .sale-container {
+    font-size: 16px
+}
+
+.account-content .account-layout .sale-container .tabs ul {
+    font-weight: 600;
+    font-size: 20px;
+    list-style-type: none
+}
+
+.account-content .account-layout .sale-container .tabs ul li {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: inline-block;
+    border-bottom: 2px solid transparent
+}
+
+.account-content .account-layout .sale-container .tabs ul li.active {
+    cursor: default;
+    border-bottom: 2px solid #26a37c
+}
+
+.account-content .account-layout .sale-container .tabs-content .sale-section {
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #ccc
+}
+
+.account-content .account-layout .sale-container .tabs-content .sale-section .section-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: #9e9e9e
+}
+
+.account-content .account-layout .sale-container .tabs-content .sale-section .section-content label+span {
+    font-weight: 600;
+    color: #9e9e9e
+}
+
+.account-content .account-layout .sale-container .tabs-content .sale-section .section-content .totals {
+    width: 100%;
+    display: inline-block
+}
+
+.account-content .account-layout .sale-container .tabs-content .sale-section .section-content .totals .sale-summary {
+    float: right
+}
+
+.account-content .account-layout .sale-container .tabs-content .sale-section .section-content .totals .sale-summary tbody tr td:first-child {
+    width: 200px
+}
+
+.account-content .account-layout .sale-container .tabs-content .sale-section .section-content .table table {
+    width: 100%
+}
+
+.account-content .account-layout .sale-container .order-box-container {
+    padding: 10px 0
+}
+
+.account-content .account-layout .sale-container .order-box-container .box {
+    width: calc(25% - 5px);
+    vertical-align: top;
+    display: inline-block
+}
+
+.account-content .account-layout .sale-container .order-box-container .box .box-title {
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 600;
+    color: #9e9e9e
+}
+
+.account-content .select-icon {
+    left: 95%;
+    top: -28px;
+    font-size: 22px;
+    position: relative
+}
+.account-content .account-layout .account-table-content #datagrid-filters~table.table tbody tr .action .eye-icon,
+.account-content .account-layout .account-table-content .filter-row-two .filter-tag .cross-icon,
+.account-content .account-layout .bottom-toolbar .pagination .page-item.next .angle-left-icon,
+.account-content .account-layout .bottom-toolbar .pagination .page-item.next .angle-right-icon,
+.account-content .account-layout .bottom-toolbar .pagination .page-item.previous .angle-left-icon,
+.account-content .account-layout .bottom-toolbar .pagination .page-item.previous .angle-right-icon,
+.account-content .sidebar .customer-sidebar .navigation li i.icon,
+.bottom-toolbar .pagination .page-item.next .angle-left-icon,
+.bottom-toolbar .pagination .page-item.next .angle-right-icon,
+.bottom-toolbar .pagination .page-item.previous .angle-left-icon,
+.bottom-toolbar .pagination .page-item.previous .angle-right-icon,
+.rango-default {
+    speak: none;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    font-family: Webkul Rango !important
+}
+account-content .sidebar {
+        display: none
+    }
+
+    .account-content .account-layout {
+        padding: 0
+    }
+
+    .account-content .account-layout.right {
+        padding-right: 20px !important;
+        padding-left: 20px !important
+    }
+
+    .account-content .account-layout .account-items-list.wishlist-container .product-card-new {
+        width: calc(50% - 5px)
+    }
+
+    .account-content .account-layout .account-table-content #datagrid-filters>.search-filter {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 10px
+    }
+
+    .account-content .account-layout .account-table-content #datagrid-filters>.dropdown-filters {
+        width: 100%
+    }
+
+    .account-content .account-layout .account-table-content #datagrid-filters>.dropdown-filters .control-group {
+        width: 100%;
+        max-width: 100%
+    }
+
+    .account-content .account-layout .account-table-content #datagrid-filters>.dropdown-filters .dropdown-container li {
+        width: 100%
+    }
+
+    .account-content .account-layout .account-table-content #datagrid-filters>.dropdown-filters:nth-of-type(2) {
+        margin-top: 30px;
+        margin-bottom: 10px
+    }
+
+    .account-content .account-layout .sale-container .tabs-content .totals .sale-summary {
+        width: 100%;
+        font-size: 17px
+    }
+
+    .account-content .account-layout .sale-container .tabs-content .totals .sale-summary tbody tr td {
+        width: 50% !important
+    }
+
+    .account-content .account-layout .sale-container .tabs-content .totals .sale-summary tbody tr td:last-child {
+        text-align: right
+    }
+
+    .account-content .account-layout .sale-container .order-box-container .box {
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .account-content .account-layout .sale-container .order-box-container .box .box-title {
+        padding-bottom: 0
+    }
+
+    .account-content .account-layout .table table thead {
+        display: none
+    }
+
+    .account-content .account-layout .table table tr {
+        margin-bottom: 20px;
+        border: 1px solid #ccc
+    }
+
+    .account-content .account-layout .table table tr td {
+        width: 100%;
+        display: block;
+        border-top: none
+    }
+
+    .account-content .account-layout .table table tr td:before {
+        content: attr(data-value);
+        font-size: 15px;
+        font-weight: 600;
+        display: inline-block;
+        width: 120px
+    }
+
+    .account-content .account-layout .table table tr td .action {
+        display: inline-block
+    }
+.customer-sidebar .navigation a {
+  color: unset!important;
+  text-decoration: none!important;
+  display: block;
+}
+.customer-sidebar .navigation .pull-right {
+  float: right;
+}
+.account-content .account-layout.right {
+    padding-left: 250px!important;
+}
+.customer-name {
+    display: table-cell;
+    height: 54px;
+    width: 56px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #21a179;
+    color: #fff;
+    padding: 16px;
+    font: 18px josefin sans,arial;
+}
+@font-face {
+    font-family: Webkul Rango;
+    src: url("../../fonts/font-rango/rango.eot?o0evyv");
+    src: url("../../fonts/font-rango/rango.eot?o0evyv#iefix") format("embedded-opentype"), url("../../fonts/font-rango/rango.ttf?o0evyv") format("truetype"), url("../../fonts/font-rango/rango.woff?o0evyv") format("woff"), url("../../fonts/font-rango/rango.svg?o0evyv#rango") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+.wk-icon {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #0041ff
+}
+
+[class*=" rango-"],
+[class^=rango-] {
+    font-family: Webkul Rango !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.rango-activity:before {
+    content: "\E900"
+}
+
+.rango-announcement:before {
+    content: "\E901"
+}
+
+.rango-arrow-circle-down:before {
+    content: "\E902"
+}
+
+.rango-arrow-circle-left:before {
+    content: "\E903"
+}
+
+.rango-arrow-circle-right:before {
+    content: "\E904"
+}
+
+.rango-arrow-circle-up:before {
+    content: "\E905"
+}
+
+.rango-arrow-down:before {
+    content: "\E906"
+}
+
+.rango-arrow-left:before {
+    content: "\E907"
+}
+
+.rango-arrow-right:before {
+    content: "\E908"
+}
+
+.rango-arrow-up:before {
+    content: "\E909"
+}
+
+.rango-auction:before {
+    content: "\E90A"
+}
+
+.rango-baby:before {
+    content: "\E90B"
+}
+
+.rango-bag:before {
+    content: "\E90C"
+}
+
+.rango-ball-2:before {
+    content: "\E90D"
+}
+
+.rango-bar-code:before {
+    content: "\E90E"
+}
+
+.rango-batch:before {
+    content: "\E90F"
+}
+
+.rango-book:before {
+    content: "\E910"
+}
+
+.rango-calender:before {
+    content: "\E911"
+}
+
+.rango-camera:before {
+    content: "\E912"
+}
+
+.rango-car:before {
+    content: "\E913"
+}
+
+.rango-card:before {
+    content: "\E914"
+}
+
+.rango-cart-1:before {
+    content: "\E915"
+}
+
+.rango-cart-2:before {
+    content: "\E916"
+}
+
+.rango-cart-3:before {
+    content: "\E917"
+}
+
+.rango-circel-1:before {
+    content: "\E918"
+}
+
+.rango-circel:before {
+    content: "\E919"
+}
+
+.rango-circle-1:before {
+    content: "\E91A"
+}
+
+.rango-circle-2:before {
+    content: "\E91B"
+}
+
+.rango-circle-check:before {
+    content: "\E91C"
+}
+
+.rango-clear:before {
+    content: "\E91D"
+}
+
+.rango-close-2:before {
+    content: "\E91E"
+}
+
+.rango-close:before {
+    content: "\E91F"
+}
+
+.rango-cloth:before {
+    content: "\E920"
+}
+
+.rango-coin:before {
+    content: "\E921"
+}
+
+.rango-copy:before {
+    content: "\E922"
+}
+
+.rango-currency:before {
+    content: "\E923"
+}
+
+.rango-delete:before {
+    content: "\E924"
+}
+
+.rango-donwload-1:before {
+    content: "\E925"
+}
+
+.rango-download-1:before {
+    content: "\E926"
+}
+
+.rango-edit-pencil:before {
+    content: "\E927"
+}
+
+.rango-ellipse:before {
+    content: "\E928"
+}
+
+.rango-envelop:before {
+    content: "\E929"
+}
+
+.rango-exchange:before {
+    content: "\E92A"
+}
+
+.rango-exchnage:before {
+    content: "\E92B"
+}
+
+.rango-expend-collaps:before {
+    content: "\E92C"
+}
+
+.rango-expend:before {
+    content: "\E92D"
+}
+
+.rango-eye-hide:before {
+    content: "\E92E"
+}

@@ -1,0 +1,121 @@
+.banner {
+    min-height: 600px;
+    background: $blue;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include mmax(992) {
+        min-height: 520px;
+    }
+    @include mmax(767) {
+        padding: 90px 0;
+        min-height: 320px;
+    }
+    &__title {
+        font-family: $font2;
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 42px;
+        color: #fff;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+
+        @include mmax(767) {
+            font-size: 25px;
+            letter-spacing: 0.09em;
+            line-height: 21px;
+        }
+        @include mmax(575) {
+            font-size: 15px;
+        }
+    }
+    &__content {
+        max-width: 640px;
+        margin: 0 auto;
+        font-family: $font3;
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+
+        color: #ffffff;
+    }
+    &__wrap {
+        max-width: 900px;
+    }
+
+    &__img {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+.main-banner {
+    &__block {
+        min-height: 900px;
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mmax(991) {
+            min-height: 700px;
+        }
+        @include mmax(575) {
+            min-height: 578px;
+        }
+    }
+    &__content {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    &__logo {
+        margin-bottom: 90px;
+        @include mmax(575) {
+            display: none;
+        }
+    }
+    &__link {
+    }
+    .page-title {
+        max-width: 1160px;
+        width: 100%;
+        margin-bottom: 67px;
+        @include mmax(575) {
+            text-align: center;
+        }
+    }
+}
+
+.main-about {
+    .banner {
+        margin-bottom: 120px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__wrap {
+            max-width: none;
+        }
+        &__title {
+            white-space: pre-line;
+        }
+
+        @include mmax(991) {
+            margin-bottom: 80px;
+        }
+        @include mmax(767) {
+            margin-bottom: 60px;
+        }
+    }
+}

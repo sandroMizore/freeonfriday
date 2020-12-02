@@ -587,7 +587,7 @@
   array (
     'name' => 'Bagisto',
     'env' => 'local',
-    'debug' => false,
+    'debug' => true,
     'url' => 'http://free.ams.agency',
     'timezone' => 'Europe/Kiev',
     'locale' => 'uk',
@@ -2306,21 +2306,13 @@
       ),
       4 => 
       array (
-        'key' => 'velocity.news',
-        'name' => 'News',
-        'route' => 'velocity.admin.content.index',
-        'sort' => 9,
-        'icon-class' => 'cms-icon',
-      ),
-      5 => 
-      array (
         'key' => 'dashboard',
         'name' => 'admin::app.layouts.dashboard',
         'route' => 'admin.dashboard.index',
         'sort' => 1,
         'icon-class' => 'dashboard-icon',
       ),
-      6 => 
+      5 => 
       array (
         'key' => 'sales',
         'name' => 'admin::app.layouts.sales',
@@ -2328,7 +2320,7 @@
         'sort' => 2,
         'icon-class' => 'sales-icon',
       ),
-      7 => 
+      6 => 
       array (
         'key' => 'sales.orders',
         'name' => 'admin::app.layouts.orders',
@@ -2336,7 +2328,7 @@
         'sort' => 1,
         'icon-class' => '',
       ),
-      8 => 
+      7 => 
       array (
         'key' => 'sales.shipments',
         'name' => 'admin::app.layouts.shipments',
@@ -2344,7 +2336,7 @@
         'sort' => 2,
         'icon-class' => '',
       ),
-      9 => 
+      8 => 
       array (
         'key' => 'sales.invoices',
         'name' => 'admin::app.layouts.invoices',
@@ -2352,7 +2344,7 @@
         'sort' => 3,
         'icon-class' => '',
       ),
-      10 => 
+      9 => 
       array (
         'key' => 'sales.refunds',
         'name' => 'admin::app.layouts.refunds',
@@ -2360,7 +2352,7 @@
         'sort' => 4,
         'icon-class' => '',
       ),
-      11 => 
+      10 => 
       array (
         'key' => 'catalog',
         'name' => 'admin::app.layouts.catalog',
@@ -2368,7 +2360,7 @@
         'sort' => 3,
         'icon-class' => 'catalog-icon',
       ),
-      12 => 
+      11 => 
       array (
         'key' => 'catalog.products',
         'name' => 'admin::app.layouts.products',
@@ -2376,7 +2368,7 @@
         'sort' => 1,
         'icon-class' => '',
       ),
-      13 => 
+      12 => 
       array (
         'key' => 'catalog.categories',
         'name' => 'admin::app.layouts.categories',
@@ -2384,7 +2376,7 @@
         'sort' => 3,
         'icon-class' => '',
       ),
-      14 => 
+      13 => 
       array (
         'key' => 'catalog.attributes',
         'name' => 'admin::app.layouts.attributes',
@@ -2392,7 +2384,7 @@
         'sort' => 2,
         'icon-class' => '',
       ),
-      15 => 
+      14 => 
       array (
         'key' => 'catalog.families',
         'name' => 'admin::app.layouts.attribute-families',
@@ -2400,7 +2392,7 @@
         'sort' => 4,
         'icon-class' => '',
       ),
-      16 => 
+      15 => 
       array (
         'key' => 'customers',
         'name' => 'admin::app.layouts.customers',
@@ -2408,7 +2400,7 @@
         'sort' => 4,
         'icon-class' => 'customer-icon',
       ),
-      17 => 
+      16 => 
       array (
         'key' => 'customers.customers',
         'name' => 'admin::app.layouts.customers',
@@ -2416,7 +2408,7 @@
         'sort' => 1,
         'icon-class' => '',
       ),
-      18 => 
+      17 => 
       array (
         'key' => 'customers.groups',
         'name' => 'admin::app.layouts.groups',
@@ -2424,7 +2416,7 @@
         'sort' => 2,
         'icon-class' => '',
       ),
-      19 => 
+      18 => 
       array (
         'key' => 'customers.reviews',
         'name' => 'admin::app.layouts.reviews',
@@ -2432,7 +2424,7 @@
         'sort' => 3,
         'icon-class' => '',
       ),
-      20 => 
+      19 => 
       array (
         'key' => 'customers.subscribers',
         'name' => 'admin::app.layouts.newsletter-subscriptions',
@@ -2440,7 +2432,7 @@
         'sort' => 4,
         'icon-class' => '',
       ),
-      21 => 
+      20 => 
       array (
         'key' => 'configuration',
         'name' => 'admin::app.layouts.configure',
@@ -2448,7 +2440,7 @@
         'sort' => 7,
         'icon-class' => 'configuration-icon',
       ),
-      22 => 
+      21 => 
       array (
         'key' => 'settings',
         'name' => 'admin::app.layouts.settings',
@@ -2456,7 +2448,7 @@
         'sort' => 6,
         'icon-class' => 'settings-icon',
       ),
-      23 => 
+      22 => 
       array (
         'key' => 'settings.locales',
         'name' => 'admin::app.layouts.locales',
@@ -2464,7 +2456,7 @@
         'sort' => 1,
         'icon-class' => '',
       ),
-      24 => 
+      23 => 
       array (
         'key' => 'settings.currencies',
         'name' => 'admin::app.layouts.currencies',
@@ -2472,7 +2464,7 @@
         'sort' => 2,
         'icon-class' => '',
       ),
-      25 => 
+      24 => 
       array (
         'key' => 'settings.exchange_rates',
         'name' => 'admin::app.layouts.exchange-rates',
@@ -2480,7 +2472,7 @@
         'sort' => 3,
         'icon-class' => '',
       ),
-      26 => 
+      25 => 
       array (
         'key' => 'settings.inventory_sources',
         'name' => 'admin::app.layouts.inventory-sources',
@@ -2488,7 +2480,7 @@
         'sort' => 4,
         'icon-class' => '',
       ),
-      27 => 
+      26 => 
       array (
         'key' => 'settings.channels',
         'name' => 'admin::app.layouts.channels',
@@ -2496,7 +2488,7 @@
         'sort' => 5,
         'icon-class' => '',
       ),
-      28 => 
+      27 => 
       array (
         'key' => 'settings.users',
         'name' => 'admin::app.layouts.users',
@@ -2504,7 +2496,7 @@
         'sort' => 6,
         'icon-class' => '',
       ),
-      29 => 
+      28 => 
       array (
         'key' => 'settings.users.users',
         'name' => 'admin::app.layouts.users',
@@ -2512,7 +2504,7 @@
         'sort' => 1,
         'icon-class' => '',
       ),
-      30 => 
+      29 => 
       array (
         'key' => 'settings.users.roles',
         'name' => 'admin::app.layouts.roles',
@@ -2520,7 +2512,7 @@
         'sort' => 2,
         'icon-class' => '',
       ),
-      31 => 
+      30 => 
       array (
         'key' => 'settings.sliders',
         'name' => 'admin::app.layouts.sliders',
@@ -2528,7 +2520,7 @@
         'sort' => 7,
         'icon-class' => '',
       ),
-      32 => 
+      31 => 
       array (
         'key' => 'settings.taxes',
         'name' => 'admin::app.layouts.taxes',
@@ -2536,7 +2528,7 @@
         'sort' => 8,
         'icon-class' => '',
       ),
-      33 => 
+      32 => 
       array (
         'key' => 'settings.taxes.tax-categories',
         'name' => 'admin::app.layouts.tax-categories',
@@ -2544,7 +2536,7 @@
         'sort' => 1,
         'icon-class' => '',
       ),
-      34 => 
+      33 => 
       array (
         'key' => 'settings.taxes.tax-rates',
         'name' => 'admin::app.layouts.tax-rates',
@@ -2552,7 +2544,7 @@
         'sort' => 2,
         'icon-class' => '',
       ),
-      35 => 
+      34 => 
       array (
         'key' => 'promotions',
         'name' => 'admin::app.layouts.promotions',
@@ -2560,7 +2552,7 @@
         'sort' => 5,
         'icon-class' => 'promotion-icon',
       ),
-      36 => 
+      35 => 
       array (
         'key' => 'promotions.catalog-rules',
         'name' => 'admin::app.promotions.catalog-rules.title',
@@ -2568,7 +2560,7 @@
         'sort' => 1,
         'icon-class' => '',
       ),
-      37 => 
+      36 => 
       array (
         'key' => 'promotions.cart-rules',
         'name' => 'admin::app.promotions.cart-rules.title',
@@ -2576,7 +2568,7 @@
         'sort' => 2,
         'icon-class' => '',
       ),
-      38 => 
+      37 => 
       array (
         'key' => 'cms',
         'name' => 'admin::app.layouts.cms',
@@ -2584,7 +2576,7 @@
         'sort' => 5,
         'icon-class' => 'cms-icon',
       ),
-      39 => 
+      38 => 
       array (
         'key' => 'cms.pages',
         'name' => 'admin::app.cms.pages.pages',
@@ -3095,6 +3087,13 @@
         'assets_path' => 'public/themes/velocity/assets',
         'name' => 'Velocity',
         'parent' => 'default',
+      ),
+      'freeonfriday' => 
+      array (
+        'views_path' => 'resources/themes/freeonfriday/views',
+        'assets_path' => 'public/themes/freeonfriday/assets',
+        'name' => 'FreeOnFriday',
+        'parent' => 'Velocity',
       ),
     ),
   ),

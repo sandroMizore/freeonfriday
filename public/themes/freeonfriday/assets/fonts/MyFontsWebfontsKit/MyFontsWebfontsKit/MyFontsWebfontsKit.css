@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3978026, 2020-11-21T11:32:54-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AvianoSans-Bol by insigne
+ * URL: https://www.myfonts.com/fonts/insigne/aviano-sans/bold/
+ * Copyright: Copyright (c) 2009 by Jeremy Dooley. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3cb32a");
+  
+@font-face {
+  font-family: 'AvianoSans-Bol';
+  src: url('webFonts/AvianoSans-Bol/font.woff2') format('woff2'), url('webFonts/AvianoSans-Bol/font.woff') format('woff');
+}
+

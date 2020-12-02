@@ -36,5 +36,18 @@ class BlogController extends Controller {
 
         return view($this->_config['view'], compact('post'));
   }
+
+
+  public function getPosts($count) {
+    $posts = DB::table('news')
+        ->select('*')
+        ->leftJoin('news_translations', function($leftJoin) {
+            $leftJoin->on('news.id', '=', 'news_translations.news_id')
+                     ->where('news_translations.locale', app()->getLocale());
+        })
+        ->limit($count)->groupBy('news.id')->get();
+
+        return $posts;
+  }
 }
  ?>

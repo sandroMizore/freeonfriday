@@ -1,0 +1,194 @@
+.main-slider {
+    position: relative;
+    &__wrap {
+    }
+    &__block {
+        position: relative;
+        // max-height: 900px;
+        img {
+            max-height: 900px;
+            height: 900px;
+            // height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        @include mmax(767) {
+            img {
+                max-height: 568px;
+            }
+        }
+    }
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .page-title {
+            width: 100%;
+
+            max-width: 60%;
+            margin-bottom: 52px;
+        }
+        @include mmax(767) {
+            .page-title {
+                padding: 0 10px;
+                width: 100%;
+
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__text {
+        max-width: 360px;
+        text-transform: uppercase;
+        font-family: $font2;
+        text-align: center;
+        margin-bottom: 28px;
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: 0.13em;
+        line-height: 21px;
+        color: #ffffff;
+
+        @include mmax(767) {
+            font-size: 15px;
+            line-height: 21px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .slick-slide {
+        max-height: 900px;
+        @include mmax(767) {
+            max-height: 568px;
+        }
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        li {
+            margin-left: 0;
+            margin-right: 25px;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.slick-active {
+                button {
+                    background: #ffffff;
+                }
+            }
+            button {
+                padding: 0;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                background: transparent;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.tabs__block.slider {
+    margin: 0 -20px;
+    padding: 0 20px;
+    @include mmax(1199) {
+        margin: 0;
+        padding: 0 30px;
+    }
+}
+.product-slider {
+    // margin: 0 -30px;
+    .product-card {
+        padding: 0 30px;
+        max-width: 300px;
+        @include mmax(767) {
+            padding: 0 15px;
+        }
+    }
+    .slick-list {
+        margin: -10px 0;
+        padding: 10px 0;
+    }
+    .slick-track {
+        display: flex !important;
+        margin: -10px 0;
+        padding: 10px 0;
+    }
+    .slick-slide {
+        display: flex !important;
+        flex-direction: column;
+        min-height: 100%;
+        outline: none;
+        height: auto !important;
+        > div {
+            height: 100%;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.slider {
+    position: relative;
+    margin: 0 -30px;
+    padding: 0 30px;
+    @include mmax(1199) {
+        // padding: 0;
+        margin: 0;
+    }
+    &__track {
+        display: flex;
+        position: relative;
+        z-index: 5;
+    }
+    &__nav {
+        display: flex;
+        // display: none;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        transform: translateY(-50%);
+    }
+    &__btn {
+        i {
+            color: #000;
+            font-size: 30px;
+        }
+
+        @include mmax(767) {
+            i {
+                color: #dce1e6;
+            }
+        }
+    }
+    &__prev {
+    }
+    &__next {
+    }
+
+    .slick-slide {
+        outline: none;
+    }
+}

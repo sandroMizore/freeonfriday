@@ -1,0 +1,68 @@
+.btn {
+    text-align: center;
+    outline: none;
+    &__white {
+        font-family: $font4;
+        padding: 5px 30px;
+        padding-top: 7px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 11px;
+        color: #ffffff;
+        transition: all 0.3s;
+        &:hover {
+            color: #fff;
+            background-color: $orange;
+            border-color: $orange;
+            // color: $orange;
+            // border-color: $orange;
+        }
+    }
+    &__red {
+        width: 100%;
+        max-width: 140px;
+        text-align: center;
+        font-family: $font4;
+        padding: 5px 25px;
+        padding-top: 7px;
+        font-size: 11px;
+        line-height: 11px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+
+        border: 1px solid $orange2;
+        box-sizing: border-box;
+        border-radius: 10px;
+        color: $orange2;
+        transition: all 0.3s;
+        &:hover {
+            color: #fff;
+            background-color: $orange;
+            border-color: $orange;
+        }
+    }
+    &__grey {
+        font-family: $font4;
+        padding: 5px 25px;
+        padding-top: 7px;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #8c959e;
+        border: 1px solid #8c959e;
+        border-radius: 10px;
+        transition: all 0.3s;
+        &:hover {
+            color: #fff;
+            background-color: $orange;
+            border-color: $orange;
+        }
+    }
+}

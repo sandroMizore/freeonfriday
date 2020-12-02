@@ -1,0 +1,21 @@
+.fof-blogs-container {
+  margin-bottom: 100px;
+}
+.blog__content .title {
+  color: #0A0D0F;
+}
+.blog__content .description {
+  color: #0A0D0F;
+}
+.fof-blogs-header {
+  font-family:"Bourbon St",sans-serif;
+  font-size: 76px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.fof-blogs-header__right-part {
+  margin-left: 130px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,130 @@
+.blog-page {
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 82px;
+        position: relative;
+        z-index: 2;
+        max-width: 560px;
+
+        font-family: $font1;
+        font-size: 76px;
+        line-height: 76px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .left {
+            margin-right: auto;
+        }
+        .right {
+            margin-left: auto;
+        }
+
+        @include mmax(767) {
+            margin-bottom: 40px;
+        }
+    }
+    &__row {
+        margin-bottom: 90px;
+
+        @include mmax(767) {
+            margin-bottom: 40px;
+        }
+    }
+    &__filter {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &.open {
+            .blog-page__filter-wrap {
+                max-height: 300px;
+            }
+        }
+    }
+    &__link-all {
+        font-family: $font2;
+        margin-right: 65px;
+        font-family: $font2;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+
+        color: #8c959e;
+        i {
+            display: none;
+        }
+
+        @include mmax(767) {
+            margin-right: 0;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            i {
+                display: block;
+            }
+        }
+    }
+    &__filter-wrap {
+        @include mmax(767) {
+            background-color: #000;
+            border-radius: 10px;
+            padding: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 4;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+    }
+    &__filter-link {
+        margin-right: 65px;
+        font-family: $font2;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+
+        color: #8c959e;
+
+        @include mmax(767) {
+            margin-right: 0;
+            color: #fff;
+            margin-bottom: 5px;
+            &:first-child {
+                margin-top: 10px;
+            }
+            &:last-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__wrap {
+    }
+    &__content {
+        margin-bottom: 60px;
+        .blog__content {
+            .title {
+                color: #0a0d0f;
+            }
+            .description {
+                color: #0a0d0f;
+            }
+        }
+    }
+
+    @include mmax(767) {
+        .blog__block {
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -26,6 +26,9 @@
     @endphp
     <meta property="og:image" content="{{ $ogimage }}" />
     @endisset
+    @push('css')
+      <link rel="stylesheet" href="{{ asset('/themes/freeonfriday/assets/css/parts/blog.css') }}">
+    @endpush
 @endsection
 
 @section('content-wrapper')

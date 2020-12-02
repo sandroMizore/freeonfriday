@@ -23,5 +23,11 @@ return [
             'name' => 'Velocity',
             'parent' => 'default'
         ],
+        'freeonfriday' => [
+            'views_path' => 'resources/themes/freeonfriday/views',
+            'assets_path' => 'public/themes/freeonfriday/assets',
+            'name' => 'FreeOnFriday',
+            'parent' => 'Velocity'
+        ],
     ]
 ];

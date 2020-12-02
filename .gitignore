@@ -1,13 +1,5 @@
 /docker-compose-collection
 /node_modules
-/public/hot
-/public/storage
-/public/css
-/public/js
-/public/vendor
-/public/themes
-/public/fonts
-/vendor
 /.idea
 /.vscode
 /.vagrant
@@ -23,4 +15,3 @@ yarn.lock
 .php_cs.cache
 storage/*.key
 /docker-compose-collection/
-/resources/themes/velocity/*

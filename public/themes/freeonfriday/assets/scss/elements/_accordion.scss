@@ -1,0 +1,96 @@
+.tabs__content [data-accordion-title] {
+    display: none;
+}
+@include mmax(767) {
+    .tabs__content [data-accordion-title] {
+        display: block;
+    }
+    [data-accordion-title] {
+        position: relative;
+        display: block;
+        font-family: $font2;
+        font-size: 15px;
+        line-height: 21px;
+        &::before {
+            content: "";
+            right: 0;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            background: #0000;
+        }
+    }
+    [data-accordion-content] {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+        &.open {
+            max-height: 700px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.accordion {
+    &__title {
+        margin-bottom: 30px;
+        font-family: $font2;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #0a0d0f;
+    }
+    &__content {
+    }
+    &__menu-item {
+        margin-bottom: 20px;
+        position: relative;
+        font-family: $font2;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+
+        color: #8c959e;
+        transition: all 0.3s;
+        &::before {
+            content: "";
+            right: 0;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            background: #0000;
+            transition: all 0.3s;
+        }
+
+        &.current {
+            color: $orange;
+            &::before {
+                background-color: $orange;
+                border: 1px solid $orange;
+            }
+        }
+    }
+    &__block {
+        margin-bottom: 20px;
+        font-family: $font3;
+        font-size: 15px;
+        line-height: 21px;
+
+        color: #0a0d0f;
+        transition: all 0.3s;
+        max-height: 0;
+        overflow: hidden;
+        &.open {
+            max-height: 1000px;
+        }
+    }
+}

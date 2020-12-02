@@ -1,0 +1,97 @@
+.form-control {
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    position: relative;
+    &::after {
+        font-family: "fontello";
+        content: "\e80f";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        color: #8c959e;
+    }
+    b {
+        display: none;
+    }
+}
+
+.select2-selection__placeholder {
+    font-family: $font2;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+
+    text-align: right;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: #8c959e;
+}
+.select2-container--default .select2-selection--single {
+    border: none !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    outline: none;
+    font-family: $font2;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #8c959e !important;
+    &:focus {
+        outline: none;
+    }
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    background-color: #000;
+    border-radius: 7px;
+}
+.select2-dropdown {
+    border: 1px solid #000 !important;
+    border-radius: 10px !important;
+}
+.select2-results__option {
+    font-family: $font2;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.select2-container--default .select2-selection--single {
+    &:focus {
+        outline: none;
+    }
+}
+.select2-results {
+    border-radius: 7px;
+    overflow: hidden;
+}
+.select2-container--default .select2-results > .select2-results__options {
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $orange;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
